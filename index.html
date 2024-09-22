@@ -12,7 +12,8 @@
     <header class=" bg-white">
         <nav class=" bg-[#F9F7F3]">
             <div class=" flex justify-between items-center container mx-auto py-5">
-                <div><button class=" bg-lime-400 rounded-md text-xl py-3 px-5 text-black font-bold hover:bg-lime-500">Blog</button></div>
+                <div id="blog" class=""><button class=" bg-lime-400 rounded-md text-xl py-3 px-5 text-black font-bold hover:bg-lime-500">Blog</button></div>
+                <div id="home" class="hidden"><button class=" bg-lime-400 rounded-md text-xl py-3 px-5 text-black font-bold hover:bg-lime-500">Home</button></div>
                 <div class=" flex justify-center items-center gap-5">
                     <span><img src="images/logo.png" alt="logo"></span>
                     <span class="text-slate-700 font-bold text-2xl mt-2">Donate Bangladesh</span>
@@ -25,20 +26,20 @@
             </div>
         </nav>
         <div class="container mx-auto">
-            <div class="flex justify-center items-center gap-5 py-10">
-                <button class="bg-lime-400 rounded-md text-xl py-3 px-8 text-black font-bold hover:bg-lime-500">Donation</button>
-                <button class= "rounded-md text-xl py-3 px-8 text-black font-bold border-2 border-gray-300">History</button>
+            <div id="btn" class="flex justify-center items-center gap-5 py-10">
+                <button id="donations" class="bg-lime-400 rounded-md text-xl py-3 px-8 text-black font-bold hover:bg-lime-500">Donation</button>
+                <button id="history" class= "rounded-md text-xl py-3 px-8 text-black font-bold border-2 border-gray-300">History</button>
             </div>
         </div>
     </header>
     
-    <main class=" py-36">
+    <main id="main" class=" py-36">
         <div class=" container mx-auto grid grid-cols-2 border-2 border-gray-300 p-10 rounded-xl w-3/5">
             <div><img src="images/noakhali.png" alt="donate noyakhali images"></div>
             <div>
                 <div class=" flex items-center gap-2 bg-slate-200 w-32 rounded-md justify-center py-2">
                     <span><img src="images/coin.png" alt="coin logo"></span>
-                    <span id="noakhaliDonateBlance" class=" text-slate-700 font-bold text-xl">0</span>
+                    <span id="noakhaliDonateBlance" class=" text-slate-700 font-bold text-xl">300</span>
                     <span class=" text-slate-700 font-bold text-xl">BDT</span>
                 </div>
                 <h2 class="text-slate-700 font-bold text-2xl py-3">Donate for Flood at Noakhali, Bangladesh</h2>
@@ -56,7 +57,7 @@
                           <h3 class="text-2xl font-bold py-5 text-lime-500">Your Donation Successfull</h3>
                           <div class="modal-action">
                             <form method="dialog">
-                              <!-- if there is a button in form, it will close the modal -->
+                               [if there is a button in form, it will close the modal] 
                               <button class="btn">Close</button>
                             </form>
                           </div>
@@ -65,12 +66,15 @@
                 </div>
             </div>
         </div>
-        <!-- <div class=" container mx-auto grid grid-cols-2 border-2 border-gray-300 p-10 rounded-xl w-3/5 my-10">
+        <!-- 2nd start here now -->
+        <!-- 2nd start here now -->
+         
+        <div class=" container mx-auto grid grid-cols-2 border-2 border-gray-300 p-10 rounded-xl w-3/5 my-10">
             <div><img src="images/feni.png" alt="donate noyakhali images"></div>
             <div>
                 <div class=" flex items-center gap-2 bg-slate-200 w-32 rounded-md justify-center py-2">
                     <span><img src="images/coin.png" alt="coin logo"></span>
-                    <span class=" text-slate-700 font-bold text-xl">0</span>
+                    <span id="feniMoney" class=" text-slate-700 font-bold text-xl">500</span>
                     <span class=" text-slate-700 font-bold text-xl">BDT</span>
                 </div>
                 <h2 class="text-slate-700 font-bold text-2xl py-3">Donate for Flood Relief in Feni,Bangladesh</h2>
@@ -78,17 +82,21 @@
                     The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.
                 </p>
                 <div>
-                    <input type="text" placeholder="Type here" class="input input-bordered w-full" />
-                    <button class="bg-lime-400 rounded-md text-xl py-3 px-8 text-black font-bold hover:bg-lime-500 w-full mt-5">Donate Now</button>
+                    <input id="feniDonateMoney" type="text" placeholder="Type here" class="input input-bordered w-full" />
+                    <button id="feniDonate" class="bg-lime-400 rounded-md text-xl py-3 px-8 text-black font-bold hover:bg-lime-500 w-full mt-5">Donate Now</button>
                 </div>
             </div>
         </div>
+
+        <!-- 3rd start here now -->
+        <!-- 3rd start here now -->
+
         <div class=" container mx-auto grid grid-cols-2 border-2 border-gray-300 p-10 rounded-xl w-3/5">
             <div><img src="images/quota-protest.png" alt="donate noyakhali images"></div>
             <div>
                 <div class=" flex items-center gap-2 bg-slate-200 w-32 rounded-md justify-center py-2">
                     <span><img src="images/coin.png" alt="coin logo"></span>
-                    <span class=" text-slate-700 font-bold text-xl">0</span>
+                    <span id="quotaBlance" class=" text-slate-700 font-bold text-xl">700</span>
                     <span class=" text-slate-700 font-bold text-xl">BDT</span>
                 </div>
                 <h2 class="text-slate-700 font-bold text-2xl py-3">Aid for Injured in the Quota Movement</h2>
@@ -96,14 +104,14 @@
                     The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.
                 </p>
                 <div>
-                    <input type="text" placeholder="Type here" class="input input-bordered w-full" />
-                    <button class="bg-lime-400 rounded-md text-xl py-3 px-8 text-black font-bold hover:bg-lime-500 w-full mt-5">Donate Now</button>
+                    <input id="quotaDonateMoney" type="text" placeholder="Type here" class="input input-bordered w-full" />
+                    <button id="quotaDonate" class="bg-lime-400 rounded-md text-xl py-3 px-8 text-black font-bold hover:bg-lime-500 w-full mt-5">Donate Now</button>
                 </div>
             </div>
-        </div> -->
+        </div>
     </main>
 
-    <div id="donateHistory" class=" border-2 container mx-auto p-10 rounded-lg bg-slate-50">
+    <div id="donateHistory" class=" hidden border-2 container mx-auto p-10 rounded-lg bg-slate-50 my-10">
         <h2 class="text-2xl font-bold py-5 text-lime-500 text-center">Total Donate History-</h2>
     </div>
 
