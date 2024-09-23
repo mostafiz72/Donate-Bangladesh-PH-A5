@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate Bangladesh</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+</head>
+<body>
+
+    <header>
+        <nav class=" bg-[#F9F7F3]">
+            <div class=" w-11/12 flex justify-between items-center md:container mx-auto py-5">
+                <div><a href="index.html" class=" bg-lime-400 rounded-md text-xl py-3 px-5 text-black font-bold hover:bg-lime-500">Home</a></div>
+                <div class=" hidden md:block md:flex justify-center items-center gap-5">
+                    <span><img src="images/logo.png" alt="logo"></span>
+                    <span class="text-slate-700 font-bold text-2xl mt-2">Donate Bangladesh</span>
+                </div>
+                <div class=" flex justify-center items-center gap-2">
+                    <span><img src="images/coin.png" alt="coin logo"></span>
+                    <span id="myBlance" class=" text-slate-700 font-bold text-xl">9500</span>
+                    <span class=" text-slate-700 font-bold text-xl">BDT</span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class=" my-10">
+        <section class=" container mx-auto">
+            <h1 class=" text-4xl font-bold text-black py-5">Important FAQ <i class="fa-regular fa-circle-question"></i></h1>
+ 
+            <div class="join join-vertical w-full">
+                <div class="collapse collapse-arrow join-item border-base-300 border">
+                  <input type="radio" name="my-accordion-4" checked="checked" />
+                  <div class="collapse-title text-xl font-bold">What is the Document Object Model (DOM)</div>
+                  <div class="collapse-content">
+                    <p class=" font-semibold">The Document Object Model (DOM) is a programming interface for web documents. It represents the structure of an HTML or XML document as a tree of objects, where each element of the document (like a paragraph, a header, or an image) is a node in the tree. This allows programming languages like JavaScript to interact with the document, modifying its content, structure, and style dynamically.</p>
+                  </div>
+                </div>
+                <div class="collapse collapse-arrow join-item border-base-300 border">
+                  <input type="radio" name="my-accordion-4" checked="checked" />
+                  <div class="collapse-title text-xl font-bold">How do you select an element from the (DOM)</div>
+                  <div class="collapse-content">
+                    <p class=" font-semibold">When an event occurs (e.g., a click), it starts at the target element (the element that was clicked) and then bubbles up through its ancestors (parents, grandparents, etc.). By using a single event listener on a common ancestor, you can capture events from all its descendants. And i will select element document.getElementById and i will select element docuement.getElementsByClassName and i will select element document.getElementByClassName and etc way.</p>
+                  </div>
+                </div>
+                <div class="collapse collapse-arrow join-item border-base-300 border">
+                  <input type="radio" name="my-accordion-4" checked="checked" />
+                  <div class="collapse-title text-xl font-bold">What is even delegation in the context of the DOM, and why is it useful?</div>
+                  <div class="collapse-content">
+                    <p class=" font-semibold">Event delegation is a technique in the DOM that allows you to handle events at a higher level in the DOM hierarchy, rather than attaching event listeners to individual elements. Instead of adding an event listener to every child element, you can add a single event listener to a common parent, and through event bubbling, capture events triggered by child elements.</p>
+                  </div>
+                </div>
+                <div class="collapse collapse-arrow join-item border-base-300 border">
+                  <input type="radio" name="my-accordion-4" checked="checked" />
+                  <div class="collapse-title text-xl font-bold">How do you manipulate an element's attributes and styles useing the DOM?</div>
+                  <div class="collapse-content">
+                    <p class=" font-semibold">
+                        To manipulate an element's attributes and styles using the DOM, you can use JavaScript methods provided by the Other way.getAttribute(): Retrieves the value of a specified attribute setAttribute(): Adds a new attribute or changes the value of an existing attribute. removeAttribute(): Removes an attribute from an element o manipulate CSS styles of an element, you can use the style property</p>
+                  </div>
+                </div>
+                
+              </div>
+        </section>
+    </main>
+    
+
+    <script src="js/script.js"></script>
+    <script src="js/functionalits.js"></script>
+</body>
+</html>

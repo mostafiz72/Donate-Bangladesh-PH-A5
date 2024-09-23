@@ -17,14 +17,15 @@ document.getElementById("donateNoakhali").addEventListener("click", function(){
       </div>
     `;
    const donateHistory = document.getElementById("donateHistory").appendChild(p);
-   console.log(donateHistory);
    
 
     const totalNoakhaliDonateBlance = myBlance - donateInputMoney;
 
     document.getElementById("noakhaliDonateBlance").innerText = noakhaliDonateBlance + donateInputMoney;
     document.getElementById("myBlance").innerText = totalNoakhaliDonateBlance;
-        
+
+    document.getElementById("my_modal_5").showModal();
+            
 })
 
 //Feni validation start here now
@@ -50,13 +51,14 @@ document.getElementById("feniDonate").addEventListener("click", function(){
       </div>
     `;
    const donateHistory = document.getElementById("donateHistory").appendChild(p);
-   console.log(donateHistory);
    
 
     const totalfeniDonateBlance = myBlance - feniDonateMoney;
 
     document.getElementById("feniMoney").innerText = feniMoney + feniDonateMoney;
     document.getElementById("myBlance").innerText = totalfeniDonateBlance;
+
+    document.getElementById("my_modal_4").showModal();
         
 })
 
@@ -87,6 +89,8 @@ document.getElementById("quotaDonate").addEventListener("click", function(){
 
     document.getElementById("quotaBlance").innerText = quotaBlance + quotaDonateMoney;
     document.getElementById("myBlance").innerText = totalQuotaDonateBlance;
+
+    document.getElementById("my_modal_3").showModal();
         
 })
 
@@ -187,42 +191,11 @@ document.getElementById("donations").addEventListener("click", function(){
     
     
 })
-document.getElementById("home").addEventListener("click", function(){
+// document.getElementById("blog").addEventListener("click", function(){
+//     window.location="blog.html";    
+// })
+// document.getElementById("home").addEventListener("click", function(){
     
-    const main = document.getElementById("main");
-    main.classList.remove("hidden");
-        
-    const btn = document.getElementById("btn");
-    btn.classList.remove("hidden");
-
-    const blog = document.getElementById("blog");
-    blog.classList.remove("hidden");
+//     window.location="index.html";
     
-    const home = document.getElementById("home");
-    home.classList.add("hidden");
-    
-    const donateHistory = document.getElementById("donateHistory");
-    donateHistory.classList.add("hidden");
-    
-    
-})
-document.getElementById("blog").addEventListener("click", function(){
-    
-    const main = document.getElementById("main");
-    main.classList.add("hidden");
-    
-    const btn = document.getElementById("btn");
-    btn.classList.add("hidden");
-    
-    const blog = document.getElementById("blog");
-    blog.classList.add("hidden");
-    
-    const home = document.getElementById("home");
-    home.classList.remove("hidden");
-
-    const donateHistory = document.getElementById("donateHistory");
-    donateHistory.classList.remove("hidden");
-    
-    
-    
-})
+// })
