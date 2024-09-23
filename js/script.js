@@ -100,9 +100,45 @@ document.getElementById("history").addEventListener("click", function(){
 
     const donateHistory = document.getElementById("donateHistory");
     donateHistory.classList.remove("hidden");
-    
-    
-    
+
+    const history = document.getElementById("history");
+    history.classList.add(
+        "hover:bg-lime-500",
+        "font-bold",
+        "text-black",
+        "px-8",
+        "py-3",
+        "text-xl",
+        "rounded-md",
+        "border-2",
+        "bg-lime-400",
+    );
+
+    const donations = document.getElementById("donations");
+    donations.classList.remove(
+        "hover:bg-lime-500",
+        "font-bold",
+        "text-black",
+        "px-8",
+        "py-3",
+        "text-xl",
+        "rounded-md",
+        "border-2",
+        "bg-lime-400",
+    );
+  
+    const donationss = document.getElementById("donations");
+    donationss.classList.add(
+        "rounded-md",
+        "text-xl",
+        "py-3",
+        "px-8",
+        "text-black",
+        "border-2",
+        "border-gray-300",
+        "font-bold"
+    );
+        
 })
 document.getElementById("donations").addEventListener("click", function(){
     
@@ -111,7 +147,43 @@ document.getElementById("donations").addEventListener("click", function(){
 
     const donateHistory = document.getElementById("donateHistory");
     donateHistory.classList.add("hidden");
-    
+    const history = document.getElementById("history");
+    history.classList.remove(
+        "hover:bg-lime-500",
+        "font-bold",
+        "text-black",
+        "px-8",
+        "py-3",
+        "border-2",
+        "text-xl",
+        "rounded-md",
+        "bg-lime-400",
+    );
+
+    const donations = document.getElementById("donations");
+    donations.classList.add(
+        "hover:bg-lime-500",
+        "font-bold",
+        "text-black",
+        "px-8",
+        "py-3",
+        "text-xl",
+        "border-2",
+        "rounded-md",
+        "bg-lime-400",
+    );
+  
+    const historys = document.getElementById("history");
+    historys.classList.add(
+        "rounded-md",
+        "text-xl",
+        "py-3",
+        "px-8",
+        "text-black",
+        "border-2",
+        "border-gray-300",
+        "font-bold"
+    );
     
     
 })
